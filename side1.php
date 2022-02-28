@@ -21,6 +21,10 @@ $forfatter = get_post($i);
 $fornavn = get_user($i);
 $efternavn = get_user($i);
 
+$billede = get_image($i);
+
+
+
 echo "<tr>";
 echo "<br><td> Indlægs id: ", $pids['pid'], "</td>";
 echo "<br><td> Indlægs forfatter : ", $forfatter['uid'], "</td>", '<br> ';
@@ -31,6 +35,9 @@ echo "<td> Fornavn og efternavn: ", $fornavn['firstname'], " ", $efternavn['last
 echo "<td> Title: ", $oplæg['title'],"</td>", '<br>';
 echo "<td> Indhold: ", $content['content'],"</td>", '<br>';
 echo "<td> Dato: ", $date['date'],"</td>", '<br>';
+
+echo "<td> Billede: ", $billede['path'],"</td>", '<br>';
+echo "</tr>";
 
 /* LAURA
     $postID = get_pids();
