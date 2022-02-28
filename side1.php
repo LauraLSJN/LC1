@@ -6,6 +6,7 @@
   </head>
   <body>
 
+<?php
     require_once '/home/mir/lib/db.php';
 
     $postID = get_pids();
@@ -19,5 +20,6 @@
       echo 'Indholdet: ', $oplæg['content'];
     }
 
+?>
   </body>
 </html>
