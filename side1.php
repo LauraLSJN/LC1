@@ -20,7 +20,7 @@
       echo "<br><td> ID er: ", $pids['pid'], "</td>", '<br> ';
       echo "<td> Titlen er: ", $oplæg['title'],"</td>", '<br>';
       echo "<td> Indholdet er: ", $content['content'],"</td>", '<br>';
-        echo "<td> Dato: ", $date['date'],"</td>", '<br>';
+      echo "<td> Dato: ", $date['date'],"</td>", '<br>';
 
 /* LAURA
     $postID = get_pids();
