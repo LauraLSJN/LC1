@@ -16,7 +16,7 @@
 <?php  require_once '/home/mir/lib/db.php';
 //Chris v3
 
-$pid = $_GET["id"];
+$pid = $_GET['id'];
 
 $getPost = get_post($pid);
 $getUser = get_user($getPost['uid']);
@@ -24,7 +24,7 @@ $getImage = get_image($pid);
 $getComment = get_comment($pid);
 
 
-echo " Indlægs id: ", $getPost["pid"], '<br>';
+echo " Indlægs id: ", $getPost['pid'], '<br>';
 echo "Indlægs forfatter: ", $getPost['uid'], '<br> ';
 
 echo "Fornavn og efternavn: ", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
