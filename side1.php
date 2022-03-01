@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <form action="side1_v2.php" method="get">
+    <form action="side1.php" method="get">
       <label> Angiv et id for et indlæg: </label>
         <input type="number" name="id">
       <input type="submit">
