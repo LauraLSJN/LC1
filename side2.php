@@ -28,6 +28,12 @@
   exit;
   }
 
+  if (empty($_GET['id'])) {
+    echo "Parameteren bruger uid mangler ";
+    exit;
+  }
+
+
   //  $uid = $_GET["id"];
 //    $title = get_post($uid);
 
