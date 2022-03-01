@@ -15,7 +15,7 @@
 
     <?php  require_once '/home/mir/lib/db.php';
 
-    //Printer en liste ud med alle brugere i databasen, organiseret i punktform
+    //Printer en liste ud med alle brugere (uids) i databasen, organiseret i punktform
   $uids = get_uids();
   echo "<br> Her kan du se listen af uids: <br>";
 
