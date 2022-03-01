@@ -8,6 +8,5 @@
     <?php  require_once '/home/mir/lib/db.php';
 
     ?>
-
   </body>
 </html>
