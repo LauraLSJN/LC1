@@ -24,7 +24,7 @@ $getImage = get_image($pid);
 $getComment = get_comment($pid);
 
 
-echo " Indlægs id: ", $pid["pid"], '<br>';
+echo " Indlægs id: ", $getPost["pid"], '<br>';
 echo "Indlægs forfatter: ", $getPost['uid'], '<br> ';
 
 echo "Fornavn og efternavn: ", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
