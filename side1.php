@@ -30,7 +30,7 @@ echo "Indlægs forfatter: ", $getPost['uid'], '<br> ';
 echo "Fornavn og efternavn: ", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
 echo "Dato: ", $getPost['date'], '<br>';
 
-echo "<br>Title: ", $getPost['title'], '<br>';
+echo "<br>Titel:: ", $getPost['title'], '<br>';
 echo "<br>Indhold: ", $getPost['content'], '<br>';
 
 //ikke færdigt endnu
