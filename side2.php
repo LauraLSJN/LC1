@@ -16,15 +16,15 @@
     <?php  require_once '/home/mir/lib/db.php';
 
     //Printer en liste ud med alle brugere (uids) i databasen, organiseret i punktform
-  $uids = get_uids();
+  $getUids = get_uids();
   echo "<br> Her kan du se listen af uids: <br>";
 
-  foreach ($uids as $uid){
+  foreach ($getUids as $uid){
     echo ' <li> ', $uid, "<br>";
   }
 
-    $uid = $_GET["id"];
-    $title = get_post($uid);
+  //  $uid = $_GET["id"];
+//    $title = get_post($uid);
 
 //title virker ikke endnu
         echo "<br>Bruger: ", $_GET["id"], '<br>';
