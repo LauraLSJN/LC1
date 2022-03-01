@@ -29,29 +29,25 @@
      $billede = get_image($pid);
      $comment = get_comment($pid);
 
+     echo " Indlægs id: ", $pid["pid"], '<br>';
+     echo "Indlægs forfatter: ", $forfatter['uid'], '<br> ';
+
+     // virker ikke endnu med at få fornavn og efternavn på forfatteren endnu
+     echo "Fornavn og efternavn: ", $fornavn['firstname'], " ", $efternavn['lastname'], '<br>';
+       echo "Dato: ", $date['date'], '<br>';
+
+     echo "<br>Title: ", $title['title'], '<br>';
+     echo "<br>Indhold: ", $content['content'], '<br>';
+
+
+     echo "<br>Billede: ", $billede['path'], '<br>';
+
+   // virker ikke endnu
+     //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
+     echo "<br>Kommentar fra ",$comment['uid'], ": ",   $comment['content'], '<br>';
 
 
 
-  echo "<tr>";
-  echo "<td> Indlægs id: ", $pid["pid"], "</td>", '<br>';
-  echo "<td> Indlægs forfatter: ", $forfatter['uid'], "</td>", '<br> ';
-
-  // virker ikke endnu med at få fornavn og efternavn på forfatteren endnu
-  echo "<td> Fornavn og efternavn: ", $fornavn['firstname'], " ", $efternavn['lastname'], "</td>", '<br>';
-    echo "<td> Dato: ", $date['date'],"</td>", '<br>';
-
-  echo "<br><td> Title: ", $title['title'], "</td>", '<br>';
-  echo "<br><td> Indhold: ", $content['content'],"</td>", '<br>';
-
-
-  echo "<br><td> Billede: ", $billede['path'],"</td>", '<br>';
-
-  // virker ikke endnu
-  //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
-  echo "<br><td> Kommentar fra ",$comment['uid'], ": ",   $comment['content'],"</td>", '<br>';
-
-
-  echo "</tr>";
 
 /*
 //CHRIS V1  - bygget videre på
