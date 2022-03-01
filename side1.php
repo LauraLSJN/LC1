@@ -7,7 +7,8 @@
   <body>
 
     <form action="side1_v2.php" method="get">
-      Angiv et id for et indlæg: <input type="number" name="id">
+      <label> Angiv et id for et indlæg: </label>
+        <input type="number" name="id">
       <input type="submit">
     </form>
     <br>
