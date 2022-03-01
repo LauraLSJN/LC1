@@ -33,7 +33,7 @@
 
 
   echo "<tr>";
-  echo "<td> Pid: ", $pid["pid"], "</td>", '<br>';
+  echo "<td> Indlægs id: ", $pid["pid"], "</td>", '<br>';
   echo "<td> Indlægs forfatter: ", $forfatter['uid'], "</td>", '<br> ';
 
   // virker ikke endnu med at få fornavn og efternavn på forfatteren endnu
