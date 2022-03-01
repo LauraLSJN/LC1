@@ -18,9 +18,14 @@
     //Printer en liste ud med alle brugere (uids) i databasen, organiseret i punktform
   $getUids = get_uids();
   echo "<br> Her kan du se listen af uids: <br>";
-
   foreach ($getUids as $uid){
     echo ' <li> ', $uid, "<br>";
+  }
+
+  echo "<br>";
+  if (is_numeric($_GET['id'])) {
+  echo "bruger uid er ikke et tal, prøv igen";
+  exit;
   }
 
   //  $uid = $_GET["id"];
