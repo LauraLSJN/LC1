@@ -8,11 +8,11 @@
     <?php require_once '/home/mir/lib/db.php';
 
     //Printer en liste ud med alle (uids) brugere i databasen, organiseret i punktform
-$uids = get_uids();
-echo "Her kan du se listen af uids: <br>";
-foreach ($uids as $uid){
-  echo ' <li> ', $uid, "<br>";
-}
+    $uids = get_uids();
+    echo "Her kan du se listen af uids: <br>";
+    foreach ($uids as $uid){
+      echo ' <li> ', $uid, "<br>";
+    }
 
      ?>
   </body>
