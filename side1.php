@@ -6,10 +6,57 @@
   </head>
   <body>
 
+    <form action="side1_v2.php" method="get">
+      Angiv et id for et indlæg: <input type="number" name="id">
+      <input type="submit">
+    </form>
+    <br>
+
 <?php
     require_once '/home/mir/lib/db.php';
 
-//CHRIS - bygget videre på
+//CHRIS V2 - bygget videre på
+      $pid = $_GET["id"];
+     $title = get_post($pid);
+     $content = get_post($pid);
+     $date = get_post($pid);
+     $forfatter = get_post($pid);
+
+     // fornavn og efternavn  -> virker ikke endnu
+     $fornavn = get_user($pid);
+     $efternavn = get_user($pid);
+
+     $billede = get_image($pid);
+     $comment = get_comment($pid);
+
+
+
+
+  echo "<tr>";
+  echo "<td> Pid: ", $pid["pid"], "</td>", '<br>';
+  echo "<td> Indlægs forfatter: ", $forfatter['uid'], "</td>", '<br> ';
+
+  // virker ikke endnu med at få fornavn og efternavn på forfatteren endnu
+  echo "<td> Fornavn og efternavn: ", $fornavn['firstname'], " ", $efternavn['lastname'], "</td>", '<br>';
+    echo "<td> Dato: ", $date['date'],"</td>", '<br>';
+
+  echo "<br><td> Title: ", $title['title'], "</td>", '<br>';
+  echo "<br><td> Indhold: ", $content['content'],"</td>", '<br>';
+
+
+  echo "<br><td> Billede: ", $billede['path'],"</td>", '<br>';
+
+// virker ikke endnu
+  //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
+  echo "<br><td> Kommentar fra ",$comment['uid'], ": ",   $comment['content'],"</td>", '<br>';
+
+
+
+
+  echo "</tr>";
+
+/*
+//CHRIS V1  - bygget videre på
 for ($i=1; $i < 6; $i++) {
 //Variabler for post -> virker
 $oplæg = get_post($i);
@@ -45,7 +92,7 @@ echo "<td> Billede: ", $billede['path'],"</td>", '<br>';
 //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
 echo "<td> Kommentar fra ",$comment['uid'], ": ",   $comment['content'],"</td>", '<br>';
 echo "</tr>";
-}
+}*/
 
 /* LAURA
     $postID = get_pids();
