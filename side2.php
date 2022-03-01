@@ -15,7 +15,7 @@
 
     <?php  require_once '/home/mir/lib/db.php';
 
-    $uid = $_GET['id']; //kommer fra name="id" i input
+      $uid = $_GET['id']; //kommer fra name="id" i input
 
       $getUser = get_user($uid);
       $getPost = get_post($getUser['uid']);
