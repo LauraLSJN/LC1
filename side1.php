@@ -46,11 +46,9 @@
 
   echo "<br><td> Billede: ", $billede['path'],"</td>", '<br>';
 
-// virker ikke endnu
+  // virker ikke endnu
   //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
   echo "<br><td> Kommentar fra ",$comment['uid'], ": ",   $comment['content'],"</td>", '<br>';
-
-
 
 
   echo "</tr>";
