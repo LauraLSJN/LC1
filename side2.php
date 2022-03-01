@@ -22,7 +22,7 @@
     echo ' <li> ', $uid, "<br>";
   }
 
-//Hvis der bliver skrevet til tal, vil der kommme en meddelelse op
+//Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
   echo "<br>";
   if (is_numeric($_GET['id'])) {
   echo "bruger uid er ikke et tal, prøv igen";
