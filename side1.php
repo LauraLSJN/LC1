@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>side 1</title>
   </head>
   <body>
 
@@ -12,8 +12,7 @@
     </form>
     <br>
 
-<?php
-    require_once '/home/mir/lib/db.php';
+<?php  require_once '/home/mir/lib/db.php';
 
 //CHRIS V2 - bygget videre på
       $pid = $_GET["id"];
@@ -39,10 +38,10 @@
      echo "<br>Title: ", $title['title'], '<br>';
      echo "<br>Indhold: ", $content['content'], '<br>';
 
-
+//Billedet er ikke færdigt, der er kun link til billede lige nu
      echo "<br>Billede: ", $billede['path'], '<br>';
 
-   // virker ikke endnu
+
      //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
      echo "<br>Kommentar fra ",$comment['uid'], ": ",   $comment['content'], '<br>';
 
