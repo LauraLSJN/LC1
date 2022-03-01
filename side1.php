@@ -22,9 +22,8 @@
      $date = get_post($pid);
      $forfatter = get_post($pid);
 
-     // fornavn og efternavn  -> virker ikke endnu
-     $fornavn = get_user($pid);
-     $efternavn = get_user($pid);
+     $fornavn = get_user($forfatter['uid']);
+     $efternavn = get_user($forfatter['uid']);
 
      $billede = get_image($pid);
      $comment = get_comment($pid);
