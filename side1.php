@@ -14,7 +14,33 @@
     <br>
 
 <?php  require_once '/home/mir/lib/db.php';
+//Chris v3
 
+$pid = $_GET["id"];
+
+$getPost = get_post($pid);
+$getUser = get_user($getPost['uid']);
+$getImage = get_image($pid);
+$getComment = get_comment($pid);
+
+
+echo " Indlægs id: ", $pid["pid"], '<br>';
+echo "Indlægs forfatter: ", $getPost['uid'], '<br> ';
+
+echo "Fornavn og efternavn: ", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
+echo "Dato: ", $getPost['date'], '<br>';
+
+echo "<br>Title: ", $getPost['title'], '<br>';
+echo "<br>Indhold: ", $getPost['content'], '<br>';
+
+//ikke færdigt endnu
+echo "<br>Billede: ", $getImage['path'], '<br>';
+
+//Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
+echo "<br>Kommentar fra ",$getComment['uid'], ": ",   $getComment['content'], '<br>';
+
+
+/*
 //CHRIS V2 - bygget videre på
       $pid = $_GET["id"];
      $title = get_post($pid);
@@ -45,7 +71,7 @@
      //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
      echo "<br>Kommentar fra ",$comment['uid'], ": ",   $comment['content'], '<br>';
 
-
+*/
 
 
 /*
