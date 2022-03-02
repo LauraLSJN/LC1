@@ -16,19 +16,22 @@
 
     $uid = $_GET['id']; //kommer fra name="id" i input
 
-  //Henter uid fra database users
-  $getUser = get_user($uid);
+    //Henter uid fra database users
+    $getUser = get_user($uid);
 
-  //Henter indlægget/post med den specifikke uid som er indtastet
-  //$getPost = get_post($getUser['uid']);
+    //Henter indlægget/post med den specifikke uid som er indtastet
+    //$getPost = get_post($getUser['uid']);
 
-  //Returnerer et array af id'ere for alle indlæg skrevet af bruger $uid
-  foreach (get_pids_by_uid($uid) as $pid){
-    //Returnerer en repræsentation af det indlæg der har id $pid. Et indlæg repræsenteres af en associativt array af følgende form:
-    //Netop get_post som muliggør at vi kan hente titel
-    $getPost = get_post($pid);
-    echo 'Titlen er: ', $getPost['title'], '<br> </br>';
-  }
+      echo "<b>Bruger: </b>", $getUser['uid'], '<br>';
+      echo "<br>";
+
+    //Returnerer et array af id'ere for alle indlæg skrevet af bruger $uid
+    foreach (get_pids_by_uid($uid) as $pid){
+      //Returnerer en repræsentation af det indlæg der har id $pid. Et indlæg repræsenteres af en associativt array af følgende form:
+      //Netop get_post som muliggør at vi kan hente titel
+      $getPost = get_post($pid);
+      echo '<b>Titlen er: </b>', $getPost['title'], '<br> </br>';
+    }
 
     //Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
       echo "<br>";
