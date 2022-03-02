@@ -49,10 +49,8 @@
     exit;
     }
 
-      echo "<br>Bruger: ", $getUser["uid"], '<br>';
-      echo "<br>Test om der er hul til databasen: ", $getUser['date'], '<br>';
-      //Titel virker ikke endnu
-      //echo "<br>Titel: ", $getPost['title'], '<br>';
+  
+
 
     ?>
   </body>
