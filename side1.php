@@ -28,13 +28,16 @@ echo "<b> Indlægs id: </b> ", $getPost['pid'], '<br>';
 echo "<b>Indlægs forfatter: </b>", $getPost['uid'], '<br> ';
 
 echo "<b>Fornavn og efternavn: </b>", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
-  echo "Dato: ", $getPost['date'], '<br>';
+  echo "<b>Dato: </b>", $getPost['date'], '<br>';
 
 echo "<br> <b>Titel: </b>", $getPost['title'], '<br>';
 echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 
 //ikke færdigt endnu
-echo "<br><b>Billede: </b>", $getImage['path'], '<br>';
+$image_url = $getImage['path'];
+echo "<img src='$image_url' height='300'/>";
+//  echo "<br><b>Billede: </b>", $getImage['path'], '<br>';
+
 
 //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
 echo "<br><b>Kommentar fra </b>",$getComment['uid'], ": ",   $getComment['content'], '<br>';
