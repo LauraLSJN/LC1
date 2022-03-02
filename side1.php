@@ -7,7 +7,7 @@
   <body>
 
     <form action="side1.php" method="get">
-      <label> Angiv et id for et indlæg: </label>
+      <label> <b> Angiv et id for et indlæg: </b></label>
         <input type="number" name="id">
       <input type="submit">
     </form>
@@ -24,20 +24,20 @@ $getImage = get_image($pid);
 $getComment = get_comment($pid);
 
 
-echo " Indlægs id: ", $getPost['pid'], '<br>';
-echo "Indlægs forfatter: ", $getPost['uid'], '<br> ';
+echo "<b> Indlægs id: </b> ", $getPost['pid'], '<br>';
+echo "<b>Indlægs forfatter: </b>", $getPost['uid'], '<br> ';
 
-echo "Fornavn og efternavn: ", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
-echo "Dato: ", $getPost['date'], '<br>';
+echo "<b>Fornavn og efternavn: </b>", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
+  echo "Dato: ", $getPost['date'], '<br>';
 
-echo "<br>Titel:: ", $getPost['title'], '<br>';
-echo "<br>Indhold: ", $getPost['content'], '<br>';
+echo "<br> <b>Titel: </b>", $getPost['title'], '<br>';
+echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 
 //ikke færdigt endnu
-echo "<br>Billede: ", $getImage['path'], '<br>';
+echo "<br><b>Billede: </b>", $getImage['path'], '<br>';
 
 //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
-echo "<br>Kommentar fra ",$getComment['uid'], ": ",   $getComment['content'], '<br>';
+echo "<br><b>Kommentar fra </b>",$getComment['uid'], ": ",   $getComment['content'], '<br>';
 
 
 /*
