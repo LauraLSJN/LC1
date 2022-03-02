@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>side 2</title>
   </head>
+  <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
+  
   <body>
     <form action="side2.php" method="get">
     <label for="id"> <b> Angiv et id for en bruger (uid): </b></label>
