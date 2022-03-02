@@ -35,9 +35,9 @@ echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 
 
 //Printer billeder ud tilknyttet det udvalgte (pid) post
-  foreach (get_iids_by_pid($pid) as $iids){
+  foreach (get_iids_by_pid($pid) as $iid){
 
-       $getImage = get_image($iids);
+       $getImage = get_image($iid);
        $image_url = $getImage['path'];
 
        echo "<img src='$image_url' height='300'/>";
