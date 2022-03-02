@@ -25,7 +25,11 @@ $getComment = get_comment($pid);
 
 
 echo "<b> Indlægs id: </b> ", $getPost['pid'], '<br>';
-echo "<b>Indlægs forfatter: </b>", $getPost['uid'], '<br> ';
+
+//Echoer bruger id ud, og laver det til et link.
+  echo "<b>Indlægs forfatter: </b> <a href='side2.php?id=".$getPost['uid']."'>".$getPost['uid']."</a>  <br>";
+  //<a href='side2.php?id=".$getPost['uid']."'>".$getPost['uid']."</a> - .$getPost['uid'] tilføjer variablen til url. og den sidste del er bare tekst
+
 
 echo "<b>Fornavn og efternavn: </b>", $getUser['firstname'], " ", $getUser['lastname'], '<br>';
   echo "<b>Dato: </b>", $getPost['date'], '<br>';
