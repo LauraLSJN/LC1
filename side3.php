@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>side 3</title>
   </head>
+<!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
+
   <body>
     <?php require_once '/home/mir/lib/db.php';
 
