@@ -31,7 +31,7 @@
           //Netop get_post som muliggør at vi kan hente titel
           $getPost = get_post($pid);
           //.$getPost['pid']. referer til variablen i url, som bruges til side1 - og .getPost['title'] referer til arrayet som bliver printet ud
-          echo "<li> <b>Titlen er: </b> <a href='side1_v3.php?id=".$getPost['pid']."'>".$getPost['title']."</a> </li> <br>";
+          echo "<li> <b>Titlen er: </b> <a href='side1.php?id=".$getPost['pid']."'>".$getPost['title']."</a> </li> <br>";
         }
 
 
@@ -49,7 +49,7 @@
     exit;
     }
 
-  
+
 
 
     ?>
