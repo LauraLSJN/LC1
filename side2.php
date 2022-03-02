@@ -21,13 +21,6 @@
       $getPost = get_post($getUser['uid']);
 
 
-    //Printer en liste ud med alle (uids) brugere i databasen, organiseret i punktform
-      $getUids = get_uids();
-      echo "<br> Her kan du se listen af bruger uids: <br>";
-      foreach ($getUids as $uid){
-        echo ' <li> ', $uid, "<br>";
-      }
-
     //Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
       echo "<br>";
       if (is_numeric($_GET['id'])) {
@@ -42,8 +35,9 @@
       }
 
       echo "<br>Bruger: ", $getUser["uid"], '<br>';
+      echo "<br>Test om der er hul til databasen: ", $getUser['date'], '<br>';
       //Titel virker ikke endnu
-      echo "<br>Titel: ", $getPost['title'], '<br>';
+      //echo "<br>Titel: ", $getPost['title'], '<br>';
 
     ?>
   </body>
