@@ -33,9 +33,17 @@ echo "<b>Fornavn og efternavn: </b>", $getUser['firstname'], " ", $getUser['last
 echo "<br> <b>Titel: </b>", $getPost['title'], '<br>';
 echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 
-$image_url = $getImage['path'];
-echo "<img src='$image_url' height='300'/>";
-//  echo "<br><b>Billede: </b>", $getImage['path'], '<br>';
+
+//Printer billeder ud tilknyttet det udvalgte (pid) post
+  foreach (get_iids_by_pid($pid) as $iids){
+
+       $imageinfo = get_image($iids);
+       $image_url = $imageinfo['path'];
+
+       echo "<img src='$image_url' height='300'/>";
+
+     }
+
 
 
 //Linjen nedenunder burde være nok. Indeholder både kommentar forfatterens navn og indhold af kommentar.
