@@ -25,13 +25,15 @@
       echo "<b>Bruger: </b>", $getUser['uid'], '<br>';
       echo "<br>";
 
-    //Returnerer et array af id'ere for alle indlæg skrevet af bruger $uid
-    foreach (get_pids_by_uid($uid) as $pid){
-      //Returnerer en repræsentation af det indlæg der har id $pid. Et indlæg repræsenteres af en associativt array af følgende form:
-      //Netop get_post som muliggør at vi kan hente titel
-      $getPost = get_post($pid);
-      echo '<b>Titlen er: </b>', $getPost['title'], '<br> </br>';
-    }
+      //Returnerer et array af id'ere for alle indlæg skrevet af bruger $uid
+        foreach (get_pids_by_uid($uid) as $pid){
+          //Returnerer en repræsentation af det indlæg der har id $pid. Et indlæg repræsenteres af en associativt array af følgende form:
+          //Netop get_post som muliggør at vi kan hente titel
+          $getPost = get_post($pid);
+          //.$getPost['pid']. referer til variablen i url, som bruges til side1 - og .getPost['title'] referer til arrayet som bliver printet ud
+          echo "<li> <b>Titlen er: </b> <a href='side1_v3.php?id=".$getPost['pid']."'>".$getPost['title']."</a> </li> <br>";
+        }
+
 
     //Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
       echo "<br>";
