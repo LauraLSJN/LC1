@@ -20,7 +20,7 @@ $pid = $_GET['id'];
 
 $getPost = get_post($pid);
 $getUser = get_user($getPost['uid']);
-$getImage = get_image($pid);
+//$getImage = get_image($pid);
 $getComment = get_comment($pid);
 
 
@@ -37,8 +37,8 @@ echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 //Printer billeder ud tilknyttet det udvalgte (pid) post
   foreach (get_iids_by_pid($pid) as $iids){
 
-       $imageinfo = get_image($iids);
-       $image_url = $imageinfo['path'];
+       $getImage = get_image($iids);
+       $image_url = $getImage['path'];
 
        echo "<img src='$image_url' height='300'/>";
 
