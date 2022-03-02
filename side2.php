@@ -6,7 +6,7 @@
   </head>
   <body>
     <form action="side2.php" method="get">
-    <label for="id">  Angiv et id for en bruger (uid):
+    <label for="id"> <b> Angiv et id for en bruger (uid): </b></label
       <input type="text" id="id" name="id">
       <input type="submit">
     </form>
