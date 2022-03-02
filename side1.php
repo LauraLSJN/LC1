@@ -33,7 +33,6 @@ echo "<b>Fornavn og efternavn: </b>", $getUser['firstname'], " ", $getUser['last
 echo "<br> <b>Titel: </b>", $getPost['title'], '<br>';
 echo "<br><b>Indhold: </b>", $getPost['content'], '<br>';
 
-//ikke færdigt endnu
 $image_url = $getImage['path'];
 echo "<img src='$image_url' height='300'/>";
 //  echo "<br><b>Billede: </b>", $getImage['path'], '<br>';
