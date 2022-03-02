@@ -5,6 +5,7 @@
     <title>side 1</title>
   </head>
   <body>
+<!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
 
     <form action="side1.php" method="get">
       <label> <b> Angiv et id for et indlæg: </b></label>
