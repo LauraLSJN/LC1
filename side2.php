@@ -52,7 +52,6 @@
       //Titel virker ikke endnu
       //echo "<br>Titel: ", $getPost['title'], '<br>';
 
-    echo "<br>Bruger: ", $getUser["uid"], '<br>';
     ?>
   </body>
 </html>
