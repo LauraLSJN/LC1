@@ -5,7 +5,7 @@
     <title>side 2</title>
   </head>
   <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
-  
+
   <body>
     <form action="side2.php" method="get">
     <label for="id"> <b> Angiv et id for en bruger (uid): </b></label>
@@ -37,12 +37,6 @@
         }
 
 
-    //Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
-      echo "<br>";
-      if (is_numeric($_GET['id'])) {
-      echo "Bruger uid er ikke et tal, prøv igen";
-      exit;
-      }
 
   //Hvis der bliver skrevet et tal, vil der kommme en meddelelse op
     echo "<br>";
