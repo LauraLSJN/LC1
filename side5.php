@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Side 5</title>
   </head>
+  <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
   <body>
     <form action="side5.php" method="get">
     <label for="pid"> <b> Angiv et id for et indlæg (pid): </b> </label>
