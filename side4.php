@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Side 4</title>
   </head>
-
+  <body>
+    <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
+    
     <form  action="side4.php" method="get">
       <label for="title"> <b> Title: </b> </label>
       <br>
@@ -18,7 +20,7 @@
         <input type="submit">
     </form>
 
-  <body>
+
 
     <?php require_once '/home/mir/lib/db.php';
 
