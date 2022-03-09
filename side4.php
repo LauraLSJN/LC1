@@ -35,10 +35,9 @@
 
 
     //Udfører metoden add_post med de indtastede værdier i uid, title og indhold
-$tilføjPost = add_post($uid, $title, $indhold);
+    add_post($uid, $title, $indhold);
 
 
-    echo $tilføjPost($uid,$title,$indhold);
 
 
      ?>
