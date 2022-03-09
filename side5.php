@@ -61,9 +61,11 @@ echo "<input type='submit'>";
 
 
 
-} else {
-echo "Fejl, prøv igen <br>";
-echo "Tjek om pid og uid stemmeroverens";
+} else if ($pid != $inputUid) {
+  echo "<b> Indlægs id: </b> ", $getPost['pid'], '<br>';
+  echo "<b> Indlægs Titel: </b> ", $getPost['title'], '<br>';
+  echo "<b> Indlægs Indhold: </b> ", $getPost['content'], '<br>';
+  echo "<b> Indlægs uid: </b> ", $getPost['uid'], '<br>';
 
 }
 
