@@ -7,6 +7,11 @@
   <body>
 <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
 
+<form  action="side4.php" method="get">
+      <button>Opret indlæg </button>
+  </form>
+
+
     <form action="side1.php" method="get">
       <label> <b> Angiv et id for et indlæg: </b></label>
         <input type="number" name="id">
