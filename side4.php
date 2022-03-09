@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Side 4</title>
   </head>
+      <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
   <body>
-    <!-- Christine Van Wulffeld (cvan) og Laura Juel Nielsen (lsjn) -->
-    
+
+
     <form  action="side4.php" method="get">
       <label for="title"> <b> Title: </b> </label>
       <br>
